@@ -1,78 +1,78 @@
 
-# f=open("document.txt", mode="r")
-# print(f)
-# s=f.read()
-# print(s)
-# f.close()
+f=open("document.txt", mode="r")
+print(f)
+s=f.read()
+print(s)
+f.close()
 
-# f=open("document.txt", mode="r")
-# s=f.read(4)
-# print(s)
-# f.close()
+f=open("document.txt", mode="r")
+s=f.read(4)
+print(s)
+f.close()
 
-# f=open("document.txt", mode="r")
-# s=f.readlines()
-# print(s)
+f=open("document.txt", mode="r")
+s=f.readlines()
+print(s)
 
-# s=f.readlines(1)
-# print(s)
+s=f.readlines(1)
+print(s)
 
-# s=f.readline(3)
-# print(s)
+s=f.readline(3)
+print(s)
 
-# f=open("data.txt", mode="w")
-# f.write("bangalore located in karnataka\n")
-# f.write("it is the capital city of karnataka also\n")
-# f.write("silicon valley of india ")
-# f.close()
+f=open("data.txt", mode="w")
+f.write("bangalore located in karnataka\n")
+f.write("it is the capital city of karnataka also\n")
+f.write("silicon valley of india ")
+f.close()
 
-# a=open("data.txt", mode="r")
-# s=a.read(10)
-# # read=a.readlines()
-# # print(read)
-# print(s)
+a=open("data.txt", mode="r")
+s=a.read(10)
+# read=a.readlines()
+# print(read)
+print(s)
 
-# f=open("data.txt", mode="r+")
-# x=f.readlines()
-# # for lines in x:
-# #     print(lines)
-# f.write("\nnew line added")
-# print(x)
-
-
-# print(x)
-# f=open("data.txt", mode="a")
-# f.write("\nbesant techologies training center located in rajajinagar Bangalore ")
-# f.close()
-# f=open("data.txt", mode='r')
-# a=f.readlines()
-# for lines in a:
+f=open("data.txt", mode="r+")
+x=f.readlines()
+# for lines in x:
 #     print(lines)
-# # print(a)
-# f.close()
+f.write("\nnew line added")
+print(x)
 
-# f=open("image.jpg", mode="rb")
-# a=f.read()
-# f.close()
 
-# new_copy=open("image_copy.jpg", mode="wb" )
-# new_copy.write(a)
-# f.close()
-
-# f=open("excel_data.xlsx", mode='r')
-# a=f.readlines()
+print(x)
+f=open("data.txt", mode="a")
+f.write("\nbesant techologies training center located in rajajinagar Bangalore ")
+f.close()
+f=open("data.txt", mode='r')
+a=f.readlines()
+for lines in a:
+    print(lines)
 # print(a)
-# f.close() // error
+f.close()
 
-# import pandas as pd
+f=open("image.jpg", mode="rb")
+a=f.read()
+f.close()
 
-# data_frame=pd.read_excel("excel_data.xlsx")
-# print(data_frame.head(data_frame['Id']))
+new_copy=open("image_copy.jpg", mode="wb" )
+new_copy.write(a)
+f.close()
 
-# x=data_frame['City']=data_frame.City.astype('category')
-# print(x)
+f=open("excel_data.xlsx", mode='r')
+a=f.readlines()
+print(a)
+f.close() // error
 
-###O/P
+import pandas as pd
+
+data_frame=pd.read_excel("excel_data.xlsx")
+print(data_frame.head(data_frame['Id']))
+
+x=data_frame['City']=data_frame.City.astype('category')
+print(x)
+
+# ##O/P
 # 0          New York
 # 1          New York
 # 2          New York
@@ -87,9 +87,9 @@
 # Name: City, Length: 1048575, dtype: category
 # Categories (4, object): ['Boston', 'Los Angeles', 'New York', 'San Diego']
 
-# print(data_frame.memory_usage())
+print(data_frame.memory_usage())
 
-###O/P
+# ##O/P
 # Index             132
 # Id            8388600
 # Date          8388600
@@ -103,7 +103,7 @@
 # print(dir(data_frame))
 
 
-# print(data_frame.head())
+print(data_frame.head())
 
 # ###O/P
 #    Id       Date Region      City Category         Product  Column4    Qty  Unit Price
@@ -113,7 +113,7 @@
 # 3  ID07366 2022-02-15  North  New York   Snacks    Potato Chips      NaN   27.0        1.35
 # 4  ID07371 2022-03-02  North  New York  Cookies  Chocolate Chip      NaN   85.0        1.87
 
-# print(data_frame.head(8))
+print(data_frame.head(8))
 
 # ###O/P 
 #      Id       Date Region      City Category         Product  Column4    Qty  Unit Price
@@ -126,7 +126,7 @@
 # 6  ID07377 2022-03-20  North  New York   Snacks    Potato Chips      NaN   68.0        1.68
 # 7  ID07383 2022-04-07  North  New York     Bars          Carrot      NaN   91.0        1.77
 
-# print(data_frame.describe())
+print(data_frame.describe())
 
 # ##O/P
 #                       Date  Column4           Qty  Unit Price
@@ -140,7 +140,7 @@
 # std                    NaN      NaN    988.083414    0.600169
 
 
-# print(data_frame.tail())
+print(data_frame.tail())
 # ##O/P
 #         Id Date Region City Category Product  Column4      Qty  Unit Price
 # 1048570  NaN  NaT    NaN  NaN      NaN     NaN      NaN      NaN         NaN
@@ -150,10 +150,10 @@
 # 1048574  NaN  NaT    NaN  NaN      NaN     NaN      NaN  15512.0         NaN
 
 
-# for ele in data_frame:
-#     print(ele)
+for ele in data_frame:
+    print(ele)
 
-###O/P
+##O/P
 # Id
 # Date
 # Region
